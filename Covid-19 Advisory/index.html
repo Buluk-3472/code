@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>COVID-19</title>
+
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+        <!--BOOSTRAP CDN-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="main.js"></script>
+    </head>
+
+<body>
+    <div class="titulo">
+        <img src="ico/blue_bg.png"/ width="50%" length="100%">
+        <div class="centrado">
+        <div class="texto-encima"><h1>Covid-19 Advisory</h1></div>
+        <div class="texto-encima"><p>By: Buluk #3472</p></div>
+        </div>
+    </div>
+    
+    <div class="wrap">
+        <ul class="tabs">
+            <li><a href="#tab1"><span></span class="space"><span class="tab-text">Covid Prevention and Survey</span></a></li>
+            <li><a href="#tab2"><span></span class="space"><span class="tab-text">Medicine</span></a></li>
+            <li><a href="#tab3"><span></span class="space"><span class="tab-text">More About Covid-19</span></a></li>
+        </ul>
+
+        <div class="secciones">
+            <article id="tab1">
+                <h1>What is this survey about?</h1>
+                <h2>------------------------</h2>
+                <p>Hello! The aim of this survey is to collect data, to have a basis and to know to what extent the cases of 
+                    Covid-19 have been increasing or decreasing, as well as to inform about the symptoms, and what you can do
+                    in case you present any, and in case you present symptoms, it takes you directly to professional help that
+                    tells you what you can do, so you don't put yourself at risk any more, in advance, thank you very much
+                    for answering the survey. Take care!<br></p>
+                <!--encuesta-->
+                        <div class="card">
+                           <div class= "card-header">
+                               <h4>Do you have any symptoms? </h4>
+                           </div> 
+                           <form id = "diagnostic-form" class="card-body">
+                               <h5>Answer this questions to have a diagnostic and some information about your status:   </br></h5>
+                               <div class = "form.group">
+                                   <input type = "text" id = "name" placeholder="Name" class="form.control">
+                                   <input type="number" id= "age" min="0" max="100" placeholder="Age" Class="form.control">
+                               </div>
+                               <h5><br>Have you recently been in physical contact with someone infected?</br></h5>
+                               <div class = "form.group">
+                                   <input type="radio" id="contact" value="0"> Yes <input type="radio" value = "1"> No
+                               </div>
+                               <div class = "form.group">
+                                <h5><br>State</br></h5>
+                                    <select name="select">
+                                        <option value="value1">Aguascalientes</option>
+                                        <option value="value2">Baja California</option>
+                                        <option value="value3">Baja California Sur</option>
+                                        <option value="value4">Campeche</option>
+                                        <option value="value5">Ciudad de México</option>
+                                        <option value="value6">Chiapas</option>
+                                        <option value="value7">Chihuahua</option>
+                                        <option value="value8">Coahuila</option>
+                                        <option value="value9">Colima</option>
+                                        <option value="value10">Durango</option>
+                                        <option value="value11">Estado de México</option>
+                                        <option value="value12">Guanajuato</option>
+                                        <option value="value13">Guerrero</option>
+                                        <option value="value14">Hidalgo</option>
+                                        <option value="value15">Jalisco</option>
+                                        <option value="value16">Michoacán </option>
+                                        <option value="value17">Morelos</option>
+                                        <option value="value18">Nayarit</option>
+                                        <option value="value19">Nuevo León</option>
+                                        <option value="value20">Oaxaca</option>
+                                        <option value="value21">Puebla</option>
+                                        <option value="value22">Querétaro</option>
+                                        <option value="value23">Quintana Roo</option>
+                                        <option value="value24">San Luis Potosí</option>
+                                        <option value="value25">Sinaloa</option>
+                                        <option value="value26">Sonora</option>
+                                        <option value="value27">Tabasco</option>
+                                        <option value="value28">Tamaulipas</option>
+                                        <option value="value39">Tlaxcala</option>
+                                        <option value="value30">Veracruz </option>
+                                        <option value="value31">Yucatán</option>
+                                        <option value="value33">Zacatecas</option>
+                                    </select>
+                               </div>
+                               <h5><br>If you have had more than 5 of the following symptoms write Yes:</br></h5>
+                               <img src="https://images-na.ssl-images-amazon.com/images/I/81V1mRCOplL._AC_SL800_.jpg" width="100%" length="100%"> 
+                               <div class= "form.group">
+                                   <input type= "text" id = "symptoms" placeholder="Yes or No" class="form.control">
+                                   <p></br></p>
+                                </div>
+                                <input type = "submit" value = "Save" class="btn btn-primary btn-block">
+                           </form>
+                           <ul>
+                               <a href=https://espanol.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html>Click here for professional aid</a>
+                           </ul>
+                           <ul>
+                               <a href=https://coronavirus.gob.mx/noticias/>Click here for more information about Covid-19</a>
+                           </ul>
+                        </div>
+                <div class = "col-md-8">
+                    <div id = "List of answers" class="col-md-8"></div>
+                </div>
+            </article>
+
+            <article id="tab2">
+                <h1>Is there any effective medicine?</h1>
+                <h2>------------------------</h2>
+                <p>Actually does not exist any medicine really effective against the COVID-19 virus but, there are some treatments against its 
+                symptoms, medicines that can help to feel better, nevertheless these medicines must be taken by a doctor prescription and 
+                don’t resort to self-medication.<br></p>
+                <p>To learn more about self-medication and its health causes, you can <a href="https://linktr.ee/Buluk3472" target="_blank"> click here</a>.</p>
+            </article>
+
+            <article id="tab3">
+                <h1>What is COVID-19?</h1>
+                <h2>------------------------</h2>
+                <p>Covid had arrived in every country in the world. This pandemic not only has corrupted the usual routines that human beings used to do, but 
+                also made us evolve. What we mean with evolve, is that the education system turned so flexible that was able to keep up classes via online in a 
+                maximum of two months after the pandemic started. Scientific development in the world also had their progress, so they discovered a 
+                vaccine for the Covid in less than a year, when usually discovering one takes over five years or more.</br>
+                
+                <br>“There are three COVID-19 vaccines for which certain national regulatory authorities have authorized the use. None have yet received 
+                WHO EUL/PQ authorization but we expect an assessment on the Pfizer vaccine by the end of December and for some other candidates soon 
+                thereafter.” (World Health Organization, 2020).</br></p>
+
+                <h2>Why getting the Covid vaccine?</h2>
+                <p><br>We all know there are some people concerned about getting vaccinated now that COVID-19 vaccines are available in some countries. 
+                    While more COVID-19 vaccines are being developed as quickly as possible, routine processes and procedures remain in place to ensure of 
+                    any vaccine that is authorized or approved for use. Safety is a top priority, and there are many reasons to get vaccinated.</br></p>
+
+                <h3>The COVID-19 vaccine will help you avoid getting it</h3>
+                <p><br>COVID-19 vaccines that are in development are being carefully evaluated in clinical trials and will be authorized 
+                or approved only if they make it substantially less likely you’ll get COVID-19.</br></p>
+                
+                <h3>COVID-19 vaccination will be an important and essential tool to help stop the pandemic</h3>
+                <p><br>Wearing masks and social distancing help reduce your chance of being exposed to the virus or spreading it to others, 
+                but these measures are not enough. Vaccines will work with your immune system so it will be ready to fight the virus if you are exposed.</br></p>
+                
+                <h2>Are these vaccines safe?</h2>
+                <p><br> Though most of these vaccines have not been approved and their percentage of success is 95%, there is a vaccine which the level of 
+                danger is almost nonexistent, the mRNA vaccine. This vaccine works in a completely different way than the other ones. Mainly because you 
+                are not getting any virus applied into your body, but instead, just a protein. This protein is not recognized by your body, making it generate
+                antibodies. So as you are not getting any virus, you cannot get covid by any chance. But you are generating the defenses to attack it in case of 
+                getting infected.</br></p>
+
+                <h3>To know more about it:</h3>
+                <p>- +34 93 214 7300<br>
+                - info@isglobal.org<br>
+                - +1 (202) 974-3000<br>
+                - 1-888-INFO-FDA (1-888-463-6332)<br>
+                - +44 (0) 161 408 2546 (UK)</p><br>
+            </article>
+        </div>
+    </div>
+</body>
+</html>

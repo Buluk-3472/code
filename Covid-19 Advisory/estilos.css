@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box.sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.titulo{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.texto-encima{
+    top: 10px;
+    left: 10px;
+    color: aliceblue;
+}
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body{
+    height: 100%;
+    background-image: url(../Covid-19\ Advisory/ico/covi.jpg);
+    background-size: auto;
+    font-family: Arial;
+}
+
+.wrap{
+    width: 1000px;
+    max-width: 90%;
+    margin: 30px auto;
+}
+
+ul.tabs{
+    width: 100%;
+    background: rgb(0, 0, 0);
+    list-style: none;
+    display: flex;
+}
+
+ul.tabs li{
+    width: 50%;
+    text-align: center;
+}
+
+ul.tabs li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: large;
+    text-align: center;
+    display: block;
+    padding: 10px 10px;
+}
+
+.active{
+    background: #3139a7fb;
+}
+
+ul.tabs li a .tab-text{
+    margin-left: 8px;
+}
+
+.secciones{
+    width: 100%;
+    background: whitesmoke;
+}
+
+.secciones article{
+    padding: 30px;
+}
+
+.secciones article p{
+    text-align: justify;
+}
+
+.card{
+    display: flex;
+    text-align:center;
+    align-items: center;
+    width: auto;
+}
+
+@media screen and (max-width: 700px){
+    ul.tabs li{
+        width: none;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 450px){
+    ul.tabs li a{
+        padding: 15px 0px;
+    }
+
+    ul.tabs li a .tab-text{
+        display: none;
+    }
+
+    .secciones article{
+        padding: 20px;
+    }
+}
