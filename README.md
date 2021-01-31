@@ -12,4 +12,3 @@ Why do we choose a website?
 Nowadays we know that the internet has become an essential tool, this means that the most of the people have access to a website through the internet, this can help the community and vulnerable populations to identify symptoms and even know the degree of contagion in the area where they live, making people aware of keeping in use the necessary sanitation measures to maintain a healthy life.
 
 Authors: Diana Trapaga, Rosa Figueroa, Andrés Méndez, Bruno González and Julio Vivas
-Team: Buluk #3472
